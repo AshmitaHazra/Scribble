@@ -1,0 +1,80 @@
+body{
+    background-color: #ffeedd;
+}
+.topbutton{
+    width:90px;
+    padding:10px;
+    cursor:pointer;
+    font-weight:500;
+    font-size:90%;
+    background:#0000ff;
+    color:#fff;
+    float:right;
+    margin:10px 10px 0px 0px;
+    font-family:Arial,Helvetica,sans-serif;
+    } 
+    
+    .sub_title{
+        font-family:"Ubuntu Mono", cursive;
+        font-size:15px;
+        color:black;
+        margin:auto;
+        text-decoration:none;
+        margin:10px 10px 0px 10px;
+        } 
+        .logo_title{
+            font-family:"Montez",cursive;
+            font-size:50px;
+            color:#112fb4;
+            margin:auto;
+            text-decoration:none;
+            margin:10px 10px 0px 10px;
+            } 
+
+.modal {
+    display: none; /* Hidden by default */
+    position: center;/* Stay in place */
+    background-color: transparent;
+    border: none;
+    width:50%;
+    margin: auto;
+  }
+  .modalform {
+    display: none; /* Hidden by default */
+    position: center;/* Stay in place */
+    background-color: transparent;
+    border: none;
+    width:90%;
+    height: 90%;
+    margin: auto;
+  }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+  height: 90%;
+  
+}
+hr {
+    border: 2px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

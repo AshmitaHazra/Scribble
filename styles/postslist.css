@@ -1,0 +1,197 @@
+body{
+    background-color: #ffeedd;
+}
+.topbutton{
+    width:90px;
+    padding:10px;
+    cursor:pointer;
+    font-weight:500;
+    font-size:90%;
+    background:#0000ff;
+    color:#fff;
+    float:right;
+    margin:10px 10px 0px 0px;
+    font-family:Arial,Helvetica,sans-serif;
+    } 
+    
+    .sub_title{
+        font-family:"Ubuntu Mono", cursive;
+        font-size:15px;
+        color:black;
+        margin:auto;
+        text-decoration:none;
+        margin:10px 10px 0px 10px;
+        } 
+        .logo_title{
+            font-family:"Montez",cursive;
+            font-size:50px;
+            color:#112fb4;
+            margin:auto;
+            text-decoration:none;
+            margin:10px 10px 0px 10px;
+            } 
+* {box-sizing: border-box}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for all buttons */
+.buttonEnter {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  .container1 {
+      height: 100%;
+      position: relative
+    }
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+ 
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
+
+  .card {
+    width: 585px;
+    margin: 20px;
+    display: flex;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .name{
+      background-color: white;
+  }
+  .flex-item-left {
+    background-color: white;
+    height: 140px;
+    padding: 58px 8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .flex-item-right {
+    background-color: rgb(216, 211, 211);
+    height: 140px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .head-container {
+      display: flex;
+      justify-content: space-between;
+  }
+  .DelBtn{
+    background-color: transparent; 
+    color: black;
+  }
+  .para{
+    color: #8a8383;
+    font-size: 20px;
+    margin: 5px 0px;
+  }
+
+.more-dots {
+    align-self: flex-end;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 35%;
+    height: auto;
+  }
+  .modal-content_create {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 75%;
+    height: auto;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
