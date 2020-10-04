@@ -15,18 +15,89 @@
 <header>
       <button id = "SigninBtn" class="topbutton">Sign In</button>
       <button id = "SignupBtn" class="topbutton">Sign Up</button>
+      <a class="logo_title">ScriBBler</a>
+      <p class="sub_title">Explore, Imagin, Create</p>
 <!-- Trigger/Open The Modal -->
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal1" class="modal">
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+  <div class="modal-content">  
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Get Started <span class="close">&times;</span></h1>
+        
+        <hr style="font-weight: bolder;">
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter your name" name="email" required>
+
+        <label for="username"><b>User name</b></label>
+        <input type="text" placeholder="Enter your username" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter your password" name="psw" required>
+  
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Reenter Password" name="psw-repeat" required>
+
+        <div class="clearfix">
+          <button type="submit" class="signup">Sign Up</button>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
-<a class="logo_title">ScriBBler</a>
-      <p class="sub_title">Explore, Imagin, Create</p>
-    </header>
+
+<div id="myModal2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">  
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Welcome Back! <span class="close">&times;</span></h1>
+    
+        <label for="username"><b>User name</b></label>
+        <input type="text" placeholder="Enter your username" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter your password" name="psw" required>
+        <div class="clearfix">
+          <button type="submit" class="signup">Sign In</button>
+        </div>
+        <p>Not a Menber?<a href="#" style="color:dodgerblue">Sign Up</a>.</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+</header>
+<div class="container1">
+  <div class="center">
+    <button class="post_btn" onclick="AllPostClick()">All Posts</button>
+    <button class="post_btn" id="CreatePost">Create Posts</button>
+  </div>
+</div>
+
+<div id="myModal3" class="modalform">
+  <!-- Modal content -->
+  <div class="modal-form-content">  
+    <form class="modal-form-content" action="/action_page.php">
+      <div class="container1">
+        <span onclick="document.getElementById('myModal3').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h1>Pen Your Post </h1>
+    
+        <label for="title"><b>Title</b></label>
+        <input type="text" placeholder="Enter the title of your post" name="title" required>
+  
+        <label for="content"><b>Content</b></label><br>
+        <textarea type="text" style="width: 100%;" placeholder="Enter the content of your post" name="content" required></textarea>
+        <div class="clearfix">
+          <button type="submit" width= 50px class="create">Create</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
 </body>
 <script src="./script/index.js" type="text/javascript"></script>
 
