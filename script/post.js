@@ -1,4 +1,4 @@
-// Get the modal
+//sign up & sign in model for header
 var signUpModal = document.getElementById("SignUpModel");
 var signUpBtn = document.getElementById("SignUpBtn");
 var signUpSpan = document.getElementById('CloseSignUp');
@@ -36,3 +36,16 @@ window.onclick = function(event) {
     signInModal.style.display = "none";
   }
 }
+//like button changes
+function likeBtn(){
+  document.getElementById("contentEditable") = contentEditable;
+  var save = document.getElementById("saveId");
+  save.display;
+
+}
+var signUpButton = document.getElementById("signUpButtonId");
+
+signUpButton.onclick = function() {
+  signInModal.style.display="none";
+  signUpModal.style.display = "block";
+  }

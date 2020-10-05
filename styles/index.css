@@ -10,6 +10,7 @@
     margin:10px 10px 0px 0px;
     font-family:Arial,Helvetica,sans-serif;
     } 
+    /*signIn and signUp butn */
     
     .sub_title{
       font-family:"Ubuntu Mono", cursive;
@@ -19,6 +20,7 @@
       text-decoration:none;
       margin:10px 10px 0px 10px;
       } 
+       /* sub title styling */
       .logo_title{
           font-family:"Montez",cursive;
           font-size:50px;
@@ -27,6 +29,7 @@
           text-decoration:none;
           margin:10px 10px 0px 10px;
           } 
+          /* Logo styling */
 * {box-sizing: border-box}
 /* Full-width input fields */
   input[type=text], input[type=password] {

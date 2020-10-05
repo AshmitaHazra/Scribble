@@ -12,35 +12,37 @@
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
       </head>
     <body>
+      <!-- Header Part -->
       <header>
         <button id="SignUpBtn" class="topbutton">Sign Up</button>
         <button id="SignInBtn" class="topbutton">Sign In</button>
         <a class="logo_title">ScriBBler</a>
         <p class="sub_title">Explore, Imagin, Create</p>
       </header>
+      <!-- Main Post edit, like, and comment -->
         <div class="mainDiv">
-            <h2>Title of the post</h2>
+            <p  id='contentEditable'><h2>Title of the post</h2></p>
             <div>
                 <p style="font-weight: bold;">Srishti Gupta</p> 
-                <button class="postBtn" style='font-size:15px'>Edit <i class='far fa-edit'></i></button>
-                <button class="postBtn" style='font-size:15px'>Save <i class='fas fa-save'></i></button>
+                <button id="editId" class="postBtn" style='font-size:15px'>Edit <i class='far fa-edit'></i></button>
+                <button id="saveId" class="postBtn" style='font-size:15px' hidden >Save <i class='fas fa-save'></i></button>
                 <br>
             </div>
             <br>
-            <p>
+            <p id='contentEditable'>
               Incomprehensibility or readability? That is the question.
               The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.
               One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others - which creates a distinct visual impression. Moreover, in Latin only words at the beginning of sentences are capitalized; this means that Lorem Ipsum cannot accurately represent, for example, German, in which all nouns are capitalized. Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. If the fill text is intended to illustrate the characteristics of different typefaces, it sometimes makes sense to select texts containing the various letters and symbols specific to the output language.
               There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. These alternatives to the classic Lorem Ipsum texts are often amusing and tell short, funny or nonsensical stories.
             </p>
             <div>
-              <button class="postBtnLike" style='font-size:15px'>Like <i class="fa fa-thumbs-up"></i></button><br>
+              <button onclick="likeBtn()" class="postBtnLike" style='font-size:15px'>Like <i class="fa fa-thumbs-up"></i></button><br>
               <input type="text" style="border: gray; background-color: white;" placeholder="Write a comment">
               <button class="postBtnLike" style='font-size:15px'>Comment</button>
               <input type="text" style="border: gray; background-color: white;" placeholder="Write a comment">
             </div>
     </div>
-    <!-- The Modal -->
+    <!-- The Sign up Modal -->
 <div id="SignUpModel" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
@@ -67,7 +69,7 @@
     </div>
   </div>
 </div>
-<!-- The Modal -->
+<!-- The Sign In Modal -->
 <div id="SignInModel" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
@@ -83,7 +85,7 @@
       <div class="clearfix">
         <button type="submit" class="buttonEnter">Sign In</button>
       </div>
-      <p>Not a Member?<a href="#" style="color:dodgerblue">Sign Up</a>.</p>
+      <p>Not a Member?<a href="#" id="signUpButtonId" style="color:dodgerblue">Sign Up</a>.</p>
     </div>
   </div>
 </div>

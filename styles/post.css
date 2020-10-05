@@ -13,6 +13,7 @@ body{
     margin:10px 10px 0px 0px;
     font-family:Arial,Helvetica,sans-serif;
     } 
+    /*signIn and signUp butn */
     
     .sub_title{
         font-family:"Ubuntu Mono", cursive;
@@ -22,6 +23,7 @@ body{
         text-decoration:none;
         margin:10px 10px 0px 10px;
         } 
+         /* sub title styling */
         .logo_title{
             font-family:"Montez",cursive;
             font-size:50px;
@@ -30,7 +32,7 @@ body{
             text-decoration:none;
             margin:10px 10px 0px 10px;
             } 
-
+/* Logo styling */
 
 /* The Modal (background) */
 .modal {

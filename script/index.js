@@ -47,3 +47,9 @@ function AllPostsBtn(){
   window.location.href = "./html/postslist.html";
 }
 
+var signUpButton = document.getElementById("signUpButtonId");
+
+signUpButton.onclick = function() {
+  signInModal.style.display="none";
+  signUpModal.style.display = "block";
+  }

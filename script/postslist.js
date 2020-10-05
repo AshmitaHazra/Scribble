@@ -47,9 +47,9 @@ var btnDel = document.getElementById("DelBtn");
 // Get the <span> element that closes the modal
 var spanDel = document.getElementsByClassName("close")[2];
 // When the user clicks the button, open the modal 
-btnDel.onclick = function() {
-  modalDel.style.display = "block";
-}
+// btnDel.onclick = function() {
+//   modalDel.style.display = "block";
+// }
 // When the user clicks on <span> (x), close the modal
 spanDel.onclick = function() {
   modalDel.style.display = "none";
@@ -60,3 +60,28 @@ window.onclick = function(event) {
     modalDel.style.display = "none";
   }
 }
+
+function moredotsclick(){
+  window.location.href = "./post.html";
+}
+
+function deletePost(){
+  modalDel.style.display = "none";
+  // ((btn.parentNode).parentNode).removeChild(btn.parentNode);
+  //btnDel.DOCUMENT_NODE
+  var id=sessionStorage.getItem('id')
+  console.log("Console logged",id)
+  var ele=document.getElementById(id)
+  ele.style.display='none';
+}
+
+function deletefun(id){
+sessionStorage.setItem('id',id)
+modalDel.style.display = "block";
+}
+var signUpButton = document.getElementById("signUpButtonId");
+
+signUpButton.onclick = function() {
+  signInModal.style.display="none";
+  signUpModal.style.display = "block";
+  }

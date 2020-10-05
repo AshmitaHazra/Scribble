@@ -11,21 +11,21 @@
 </head>
 
 <body>
+<!-- header part -->
 <header>
   <button id="SignUpBtn" class="topbutton">Sign Up</button>
   <button id="SignInBtn" class="topbutton">Sign In</button>
   <a class="logo_title">ScriBBler</a>
   <p class="sub_title">Explore, Imagin, Create</p>
 </header>
-
+<!-- All Post & Create Post Button -->
 <div class="container1">
   <div>
     <button class="post_btn" onclick="AllPostsBtn()">All Posts</button>
     <button class="post_btn" id="CreatePostBtn">Create Posts</button>
   </div>
 </div>
-
-<!-- The Modal -->
+<!-- The Sign Up Modal -->
 <div id="SignUpModel" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
@@ -52,29 +52,26 @@
     </div>
   </div>
 </div>
-
-<!-- The Modal -->
+<!-- The Sign In Modal -->
 <div id="SignInModel" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <span id="CloseSignIn" class="close">&times;</span>
     <div class="container">
       <h1>Welcome Back!</h1>
-  
       <label for="username"><b>User name</b></label>
       <input type="text" placeholder="Enter your username" name="email" required>
-
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter your password" name="psw" required>
       <div class="clearfix">
         <button type="submit" class="buttonEnter">Sign In</button>
       </div>
-      <p>Not a Member?<a href="#" style="color:dodgerblue">Sign Up</a>.</p>
+      <p>Not a Member?<a href="#" id="signUpButtonId" style="color:dodgerblue">Sign Up</a>.</p>
     </div>
   </div>
 </div>
 
-<!-- The Modal -->
+<!-- The Create Post Modal -->
 <div id="CreateModel" class="modal">
   <!-- Modal content -->
   <div class="modal-content_create">
@@ -93,8 +90,6 @@
     </div>
   </div>
 </div>
-
-
 </body>
 <script src="./script/index.js" type="text/javascript"></script>
 </html>
