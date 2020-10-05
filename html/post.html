@@ -9,77 +9,84 @@
         <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      </head>
     <body>
-        <header>
-            <button id = "SigninBtn" class="topbutton">Sign In</button>
-            <button id = "SignupBtn" class="topbutton">Sign Up</button>
-            <a class="logo_title">ScriBBler</a>
-            <p class="sub_title">Explore, Imagin, Create</p>
-      <!-- Trigger/Open The Modal -->
-      <!-- The Modal -->
-      <div id="myModal1" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">  
-          <form class="modal-content" action="/action_page.php">
-            <div class="container">
-              <h1>Get Started <span class="close">&times;</span></h1>
-              
-              <hr style="font-weight: bolder;">
-              <label for="name"><b>Name</b></label>
-              <input type="text" placeholder="Enter your name" name="email" required>
-      
-              <label for="username"><b>User name</b></label>
-              <input type="text" placeholder="Enter your username" name="email" required>
-        
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter your password" name="psw" required>
-        
-              <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Reenter Password" name="psw-repeat" required>
-      
-              <div class="clearfix">
-                <button type="submit" class="signup">Sign Up</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      
-      <div id="myModal2" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">  
-          <form class="modal-content" action="/action_page.php">
-            <div class="container">
-              <h1>Welcome Back! <span class="close">&times;</span></h1>
-          
-              <label for="username"><b>User name</b></label>
-              <input type="text" placeholder="Enter your username" name="email" required>
-        
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter your password" name="psw" required>
-              <div class="clearfix">
-                <button type="submit" class="signup">Sign In</button>
-              </div>
-              <p>Not a Menber?<a href="#" style="color:dodgerblue">Sign Up</a>.</p>
-            </div>
-          </form>
-        </div>
-      </div>
-      
+      <header>
+        <button id="SignUpBtn" class="topbutton">Sign Up</button>
+        <button id="SignInBtn" class="topbutton">Sign In</button>
+        <a class="logo_title">ScriBBler</a>
+        <p class="sub_title">Explore, Imagin, Create</p>
       </header>
-        <div style="align-content: center;">
+        <div class="mainDiv">
             <h2>Title of the post</h2>
             <div>
-                <h5>name</h5> & edit
+                <p style="font-weight: bold;">Srishti Gupta</p> 
+                <button class="postBtn" style='font-size:15px'>Edit <i class='far fa-edit'></i></button>
+                <button class="postBtn" style='font-size:15px'>Save <i class='fas fa-save'></i></button>
+                <br>
             </div>
+            <br>
             <p>
-                content
+              Incomprehensibility or readability? That is the question.
+              The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.
+              One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others - which creates a distinct visual impression. Moreover, in Latin only words at the beginning of sentences are capitalized; this means that Lorem Ipsum cannot accurately represent, for example, German, in which all nouns are capitalized. Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. If the fill text is intended to illustrate the characteristics of different typefaces, it sometimes makes sense to select texts containing the various letters and symbols specific to the output language.
+              There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. These alternatives to the classic Lorem Ipsum texts are often amusing and tell short, funny or nonsensical stories.
             </p>
             <div>
-                like and comment
+              <button class="postBtnLike" style='font-size:15px'>Like <i class="fa fa-thumbs-up"></i></button><br>
+              <input type="text" style="border: gray; background-color: white;" placeholder="Write a comment">
+              <button class="postBtnLike" style='font-size:15px'>Comment</button>
+              <input type="text" style="border: gray; background-color: white;" placeholder="Write a comment">
             </div>
     </div>
+    <!-- The Modal -->
+<div id="SignUpModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="CloseSignUp" class="close">&times;</span>
+    <div class="container">
+      <h1>Get Started</h1>
+      
+      <hr style="font-weight: bolder;">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter your name" name="name" required>
+
+      <label for="username"><b>User name</b></label>
+      <input type="text" placeholder="Enter your username" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter your password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Reenter Password" name="psw-repeat" required>
+
+      <div class="clearfix">
+        <button type="submit" class="buttonEnter">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal -->
+<div id="SignInModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="CloseSignIn" class="close">&times;</span>
+    <div class="container">
+      <h1>Welcome Back!</h1>
+  
+      <label for="username"><b>User name</b></label>
+      <input type="text" placeholder="Enter your username" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter your password" name="psw" required>
+      <div class="clearfix">
+        <button type="submit" class="buttonEnter">Sign In</button>
+      </div>
+      <p>Not a Member?<a href="#" style="color:dodgerblue">Sign Up</a>.</p>
+    </div>
+  </div>
+</div>
     </body>
-    <script src="../script/post.js" type="text/javascript"></script>
+    <script src="../script/postslist.js" type="text/javascript"></script>
 </html>
